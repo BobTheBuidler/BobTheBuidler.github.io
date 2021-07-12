@@ -1,3 +1,14 @@
+/* This is the code for the Disclaimer popup, not the menu */
+$(document).ready(function(){
+  let data = sessionStorage.getItem('disclaimerShown');
+  if(!data) {
+    alert('TEST ALERT');
+  }
+    sessionStorage.setItem('disclaimerShown','true')
+  });
+/* End Disclaimer popup code */
+/* Start nav menu code */ 
+
 var ddmenuOptions = {
     menuId: "ddmenu",
     linkIdToMenuHtml: "ddmenuLink",
